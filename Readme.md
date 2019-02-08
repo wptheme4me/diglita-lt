@@ -1,9 +1,8 @@
-## Starter kit for static web sites
+## diglita.lt web sites remake
 
-Here is my starter kit to speed up website development.
-
-## Configuration notes
-
-NPM package security check in DEV/PROD enviroments. Need to have nsp installed globally.
-
-   `npm i nsp -global`
+To do:
+Wireframes
+Import XML data
+VueJS filters
+Design
+Netlify CMS

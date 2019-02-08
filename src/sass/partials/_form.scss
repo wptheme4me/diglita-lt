@@ -55,6 +55,14 @@ legend {
 label {
 	color: $title-color;
 	font-weight: 800;
+	// border: 1px solid green;
+	display: block;
+}
+
+select {
+	display: block;
+	width: 100%;
+	// border: 1px solid red;
 }
 
 .notshow {
@@ -89,3 +97,4 @@ input:focus + .tooltip {
 	position: relative;
 	padding: 4px 8px;
 }
+

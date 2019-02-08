@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run -s security-check && npm run -s dev",
+    "start": "npm run -s dev",
     "dev": "node dev",
-    "security-check": "nsp check",
     "prod": "node index"
   },
   "keywords": [],

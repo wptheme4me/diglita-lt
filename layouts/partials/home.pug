@@ -1,0 +1,27 @@
+section
+ .r
+  .c5.pp
+   include ./search-form.pug
+   h1 Pas mus taip pat rasite
+   .c5
+    h2 Akumuliatoriai
+   .c5
+    h2 Veržlės
+   .c5
+    h2 Varžtai
+   .c5
+    h2 Centravimo žiedai
+
+  .c5
+   h1 Mūsų teikiamos paslaugos
+
+   -var i = 1;
+   while i < 4
+    .c0.paslaugos
+     a(href=siteurl + "paslaugos", title="Paslaugos pavadinimas #{i}")  
+      h2 Paslaugos pavadinimas #{i++}
+      p Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka.
+  
+ .r
+  .c0  
+   != contents

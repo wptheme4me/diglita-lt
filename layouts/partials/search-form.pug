@@ -1,0 +1,35 @@
+form(action="")
+    fieldset
+     legend Padangos
+     .c3.sr
+      label(for="plotis") Plotis
+       select#plotis
+        each i, variable in [100, 110, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 215, 225, 235, 240, 245, 250, 255, 265, 275, 285, 295] 
+            option(value=variable) #{i}
+     .c3.sr 
+      label(for="aukstis") Aukštis
+       select#aukstis
+        each i, variable in [10, 10.5, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 100] 
+            option(value=variable) #{i}
+     .c3.sr
+      label(for="skersmuo") Skersmuo
+       select#skersmuo
+        each i, variable in ['10', '11', '12', '13', '13C', '14', '14C', '15', '15C', '16', '16C', '17', '17C', '18', '18C', '19', '20', '21', '22', '23' ] 
+            option(value=variable) R#{i}
+     .c3.sr
+      label(for="sezoniskumas") Sezoniškumas
+       select#sezoniskumas
+        each i, variable in ['Vasarinės', 'Žieminės', 'Universalios'] 
+            option(value=variable) #{i}
+     .c3.sr
+      label(for="transportas") Automobilis
+       select#transportas
+        each i, variable in ['Komercinis', 'Lengvasis', 'Visureigis'] 
+            option(value=variable) #{i}
+     .c3.sr
+      label(for="gamintojas") Gamintojas
+       select#gamintojas
+        each i, variable in ['Antares', 'Aplus', 'Apollo', 'Austone', 'Barum', 'BF Goodrich', 'Blacklion', 'Bridgestone', 'Chengshan', 'Collins', 'Comforser', 'Continental', 'Cooper', 'Dayton', 'Debica', 'Diplomat', 'Dunlop', 'Duraturn', 'Durun', 'Ecoopony', 'Effiplus', 'Evergreen', 'Evergreen-Jinyu', 'Falken', 'Farroad', 'Federal', 'Firemax', 'Firenza', 'Firestone', 'Formula', 'Fulda', 'GeyerHosaja', 'Gislaved', 'Goodride', 'Goodyear', 'Greenmax', 'Gremax', 'Gripmax', 'GT radial', 'Haida', 'Hankook', 'Headway', 'Hifly', 'Interstate', 'Invovic', 'Kelly', 'Kenda', 'Kingstar', 'Kleber', 'Kormoran', 'Kumho', 'Landsail', 'Laufenn', 'Leao', 'LingLong', 'Mabor', 'Marshal', 'Master', 'Matador', 'Maxtrek', 'Maxxis', 'Membat', 'Michelin', 'Minerva', 'Mirage', 'Momo', 'Nankang', 'Nereus', 'Nexen', 'Nokian', 'Pace', 'Paxaro', 'Petlas', 'Pirelli', 'Point-s', 'Profil', 'Reifen', 'Roadstone', 'Rotalla', 'Royalblack', 'Saetta', 'Sailun', 'Sava', 'Semperit', 'Sonny', 'Sportiva', 'Starfire', 'Starmaxx', 'Strata', 'Sunfull', 'Sunitrac', 'Sunny', 'Suntek', 'Taurus', 'Tigar', 'Toyo', 'Tracmax', 'Triangle', 'Tristar', 'Uniglory', 'Uniroyal', 'Viking', 'Vredestein', 'WestLake', 'Yokohama', 'Zeta', 'Zetum' ] 
+            option(value=variable) #{i}
+     .c3.sr   
+      a(href="#", title="Ieškoti").ieskoti Ieškoti 

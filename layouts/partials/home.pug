@@ -2,25 +2,35 @@ section
  .r
   .c5.pp
    include ./search-form.pug
+   <small>Iškeliame "kitos prekes" kategotijų nuorodas </small>
    h1 Pas mus taip pat rasite
    .c5
-    h2 Akumuliatoriai
+    h2 
+     a(href=siteurl + "kitos-prekes", title="title") Akumuliatoriai
    .c5
-    h2 Veržlės
+    h2 
+     a(href=siteurl + "kitos-prekes", title="title") Veržlės
    .c5
-    h2 Varžtai
+    h2 
+     a(href=siteurl + "kitos-prekes", title="title") Varžtai
    .c5
-    h2 Centravimo žiedai
+    h2 
+     a(href=siteurl + "kitos-prekes", title="title") Centravimo žiedai
+   .c5
+    h2 
+     a(href=siteurl + "kitos-prekes", title="title") Kitos prekės pavadinimas
 
   .c5
-   h1 Mūsų teikiamos paslaugos
-
+   <small> Iškeliame pagrindines/svarbias paslaugas</small>
+   h1 Mūsų teikiamos paslaugos 
+   
    -var i = 1;
-   while i < 4
+   while i < 5
     .c0.paslaugos
      a(href=siteurl + "paslaugos", title="Paslaugos pavadinimas #{i}")  
-      h2 Paslaugos pavadinimas #{i++}
-      p Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka.
+      h2 #{i++} Paslaugos pavadinimas
+      p (tekstai su raktiniais žodžiais dėl SEO) Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka.
+   //-a(href=siteurl + "paslaugos", title="Visos paslaugos") Visos paslaugos     
   
  .r
   .c0  

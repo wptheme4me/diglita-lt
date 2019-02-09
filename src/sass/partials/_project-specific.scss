@@ -23,5 +23,58 @@
 nav {
     box-sizing: border-box;
     // border: 1px solid red;
-    padding-bottom: 40px; 
+}
+
+.action {
+    box-sizing: border-box;
+    // border: 1px solid red;
+    background: rgb(118, 201, 22);
+    color: white;
+    padding: 10px;
+}
+
+.tire {
+    box-sizing: border-box;
+    border: 1px solid rgb(214, 214, 214);
+    margin: 0 20px 20px 0;
+    padding: 10px;
+}
+
+.matas {
+    list-style: none;
+    
+    li {
+         margin: 0;
+
+         em {
+            font-weight: bold; 
+         }
+    }
+}
+
+.price {
+    font-size: 1.4em;
+    color: $a-color;
+}
+
+.akcija {
+    color: red;
+}
+
+// Atskirkime grid struktura nuo skirtingu DIV formatavimo
+.pp {
+    padding: 0 80px 80px 0;
+    // border: red 1px solid;
+}
+
+.titulinis-skatinimas {
+    padding: 80px;
+    margin: 32px 0 0 0;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.paslaugos-skatinimas {
+    padding: 80px;
+    margin-bottom: 3em;
+    border: 1px solid rgb(214, 214, 214);
 }

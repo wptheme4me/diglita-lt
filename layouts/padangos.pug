@@ -1,0 +1,43 @@
+extends ./default.pug
+
+block main
+ 
+ .r
+  .c0
+   //- Navigation
+   include ./partials/navigation.pug 
+  .c5
+   include ./partials/search-form.pug
+  .c5
+   include ./partials/padangu-skatinimas.pug
+
+ .r
+  .c0
+    
+   -var i = 1;
+   while i < 30
+    .c3
+     .tire  
+      h2 165/70 R13 79T Kormoran Impulser B3 
+      img(src=siteurl + "img/EU-label.png", alt="Nuotrauka" width=150)
+      img(src=siteurl + "img/padanga05.jpg", alt="Nuotrauka")
+      ul.matas
+       li <em>Plotis:</em> 165
+       li <em>Aukštis:</em> 70
+       li <em>Skersmuo:</em> R13
+       li <em>Sezonas:</em> Vasarinės 
+       li <em>Aprovos indeksas:</em> 79
+       li <em>Greičio indeksas:</em> T
+
+      ul.matas
+       li <em>Kaina (mažmeninė)</em> <em class="price"> 30.24€</em>
+       li <em>Kaina (didmeninė)</em><em class="price"> 27.00€</em>
+       li.akcija <em>Kaina (akcija)</em><em class="price"> 25.00€</em>
+       li <em>Kiekis sandelyje:</em> #{i++}
+      .action Susisiekite tel. +370612345678 <br/> El.paštu 
+       a(href="mailto: info@diglita.lt", title="El.paštas info@diglita.lt").class  info@diglita.lt
+     
+block prepend footer
+ .r
+  .c0
+   include ./partials/navigation.pug   
